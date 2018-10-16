@@ -1,17 +1,20 @@
 ---
+language: cpp
+os: linux
+compiler: gcc
+ 
  before_install:
  
- language: cpp
- os: linux
- compiler: gcc
  
-  
  install:
  #build
- g++ -Wall main.cpp -o test.out
- ./test.out
+ 
  
  after_instal:
  #Tests
  
+ script:
+ 
+ g++ -Wall main.cpp -o test.out
+ ./test.out
 ---
