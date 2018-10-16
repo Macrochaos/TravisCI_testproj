@@ -2,7 +2,6 @@ language: cpp
 os: linux
 compiler: g++
  
- script:
- 
+script:
  g++ -Wall main.cpp -o test.out
  ./test.out
