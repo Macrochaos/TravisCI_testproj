@@ -1,16 +1,6 @@
 language: cpp
 os: linux
-compiler: gcc
- 
- before_install:
- 
- 
- install:
- #build
- 
- 
- after_instal:
- #Tests
+compiler: g++
  
  script:
  
