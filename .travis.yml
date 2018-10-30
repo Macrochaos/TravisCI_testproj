@@ -4,17 +4,21 @@ language: cpp
 os: linux
 compiler: gcc
 
-packages:
-    - gcc-7
-    - g++-7
-    - cmake
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-7
+      - g++-7
+      - cmake
 
 install:
  #gcc -Wall main.cpp -o test.out
- - cmake ./
+ - cmake .
 
 after_install:
- - ./test.out
+ - .test.out
  
 
 script:
