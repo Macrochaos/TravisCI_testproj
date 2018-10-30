@@ -1,7 +1,21 @@
+
+
 language: cpp
 os: linux
-compiler: g++
- 
-script:
- g++ -Wall main.cpp -o test.out
+compiler: gcc
+
+packages:
+    - gcc-7
+    - g++-7
+
+install:
+ #gcc -Wall main.cpp -o test.out
+ cmake ./
+
+after_install:
  ./test.out
+ 
+
+script:
+
+ 
