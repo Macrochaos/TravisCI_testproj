@@ -1,7 +1,9 @@
 
 
-language: cpp
+
 os: linux
+sudo: false
+language: cpp
 compiler: gcc
 
 addons:
@@ -13,9 +15,16 @@ addons:
       - g++-7
       - cmake
 
-install:
+before_install:
+
+script:
  #gcc -Wall main.cpp -o test.out
- - cmake .
+ #- cmake .
+ #- cmake --build .
+ mkdir build
+ cd build
+ cmake ..
+ make
 
 after_install:
  - .test.out
