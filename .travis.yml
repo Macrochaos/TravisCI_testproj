@@ -18,10 +18,10 @@ addons:
 before_install:
 
 script:
- mkdir build
- cd build
- cmake ..
- make
+ - mkdir build
+ - cd build
+ - cmake ..
+ - make
 
 after_install:
  - .test.out
