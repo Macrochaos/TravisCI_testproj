@@ -24,7 +24,7 @@ script:
  - make
 
 after_install:
- - .test.out
+ - .TravisTest
  
 
 script:
