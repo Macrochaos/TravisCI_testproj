@@ -22,9 +22,10 @@ script:
  - cd build
  - cmake ..
  - make
+ - ./TravisTest
 
 after_install:
- - .TravisTest
+ 
 
 
  
