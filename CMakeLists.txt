@@ -8,7 +8,7 @@ set(UNITTESTING_VERSIO_MINOR 0)
 set(LEARN_CMAKE_VERSION_PATCH 0)
 
 set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 
 project(TravisTest)
